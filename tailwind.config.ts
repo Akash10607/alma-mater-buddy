@@ -19,6 +19,18 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        surface: "hsl(var(--surface))",
+        "surface-secondary": "hsl(var(--surface-secondary))",
+        
+        // Campus Brand Colors
+        campus: {
+          primary: "hsl(var(--campus-primary))",
+          "primary-light": "hsl(var(--campus-primary-light))",
+          "primary-dark": "hsl(var(--campus-primary-dark))",
+          secondary: "hsl(var(--campus-secondary))",
+          accent: "hsl(var(--campus-accent))",
+        },
+        
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -57,6 +69,20 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+      },
+      backgroundImage: {
+        "gradient-campus": "var(--gradient-campus)",
+        "gradient-subtle": "var(--gradient-subtle)",
+        "gradient-chat": "var(--gradient-chat)",
+      },
+      boxShadow: {
+        "soft": "var(--shadow-soft)",
+        "message": "var(--shadow-message)",
+        "glow": "var(--glow-campus)",
+      },
+      transitionTimingFunction: {
+        "smooth": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "bounce": "cubic-bezier(0.68, -0.55, 0.265, 1.55)",
       },
       borderRadius: {
         lg: "var(--radius)",

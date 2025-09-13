@@ -2,41 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Campus AI Chatbot Design System - Academic & Modern */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
+    /* Background & Surface Colors */
+    --background: 210 15% 97%;
+    --foreground: 215 25% 15%;
+    --surface: 210 20% 99%;
+    --surface-secondary: 210 25% 95%;
+    
+    /* Campus Brand Colors - Academic Blues & Teals */
+    --campus-primary: 205 85% 48%;
+    --campus-primary-light: 205 70% 65%;
+    --campus-primary-dark: 205 90% 35%;
+    --campus-secondary: 190 75% 45%;
+    --campus-accent: 215 75% 55%;
+    
+    /* Semantic UI Colors */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 215 25% 15%;
+    
+    --popover: 210 15% 98%;
+    --popover-foreground: 215 25% 15%;
+    
+    --primary: 205 85% 48%;
+    --primary-foreground: 210 15% 97%;
+    
+    --secondary: 210 25% 92%;
+    --secondary-foreground: 215 25% 25%;
+    
+    --muted: 210 20% 94%;
+    --muted-foreground: 215 15% 50%;
+    
+    --accent: 190 75% 45%;
+    --accent-foreground: 210 15% 97%;
+    
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 210 20% 88%;
+    --input: 210 20% 95%;
+    --ring: 205 85% 48%;
+    
+    /* Gradients & Special Effects */
+    --gradient-campus: linear-gradient(135deg, hsl(var(--campus-primary)), hsl(var(--campus-secondary)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--surface)), hsl(var(--background)));
+    --gradient-chat: linear-gradient(135deg, hsl(var(--campus-primary-light)), hsl(var(--accent)));
+    
+    /* Shadows & Glows */
+    --shadow-soft: 0 4px 20px -4px hsl(var(--campus-primary) / 0.15);
+    --shadow-message: 0 2px 8px -2px hsl(var(--foreground) / 0.1);
+    --glow-campus: 0 0 20px hsl(var(--campus-primary) / 0.3);
+    
+    /* Animation Timings */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
