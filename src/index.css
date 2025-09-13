@@ -45,10 +45,15 @@
     --input: 210 20% 95%;
     --ring: 205 85% 48%;
     
+    /* Chat Message Colors */
+    --chat-user: 210 10% 75%;
+    --chat-user-foreground: 215 25% 25%;
+    --chat-bot: 215 25% 15%;
+    --chat-bot-foreground: 210 15% 97%;
+    
     /* Gradients & Special Effects */
     --gradient-campus: linear-gradient(135deg, hsl(var(--campus-primary)), hsl(var(--campus-secondary)));
     --gradient-subtle: linear-gradient(180deg, hsl(var(--surface)), hsl(var(--background)));
-    --gradient-chat: linear-gradient(135deg, hsl(var(--campus-primary-light)), hsl(var(--accent)));
     
     /* Shadows & Glows */
     --shadow-soft: 0 4px 20px -4px hsl(var(--campus-primary) / 0.15);

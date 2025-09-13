@@ -151,13 +151,13 @@ export const CampusChat = () => {
                   <Card className={cn(
                     "max-w-[70%] p-4 shadow-message",
                     message.sender === "user" 
-                      ? "bg-gradient-chat text-primary-foreground" 
-                      : "bg-card"
+                      ? "bg-chat-user text-chat-user-foreground" 
+                      : "bg-chat-bot text-chat-bot-foreground"
                   )}>
                     <p className="text-sm leading-relaxed">{message.content}</p>
                     <p className={cn(
                       "text-xs mt-2 opacity-70",
-                      message.sender === "user" ? "text-primary-foreground" : "text-muted-foreground"
+                      message.sender === "user" ? "text-chat-user-foreground" : "text-chat-bot-foreground"
                     )}>
                       {message.timestamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                     </p>
@@ -176,11 +176,11 @@ export const CampusChat = () => {
                   <div className="bg-campus-primary text-primary-foreground rounded-full p-2 h-fit">
                     <Bot className="h-4 w-4" />
                   </div>
-                  <Card className="max-w-[70%] p-4 shadow-message bg-card">
+                  <Card className="max-w-[70%] p-4 shadow-message bg-chat-bot">
                     <div className="flex gap-1">
-                      <div className="w-2 h-2 bg-muted-foreground rounded-full animate-bounce"></div>
-                      <div className="w-2 h-2 bg-muted-foreground rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
-                      <div className="w-2 h-2 bg-muted-foreground rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
+                      <div className="w-2 h-2 bg-chat-bot-foreground/60 rounded-full animate-bounce"></div>
+                      <div className="w-2 h-2 bg-chat-bot-foreground/60 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
+                      <div className="w-2 h-2 bg-chat-bot-foreground/60 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
                     </div>
                   </Card>
                 </div>
