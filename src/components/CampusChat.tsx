@@ -101,8 +101,8 @@ export const CampusChat = () => {
           <div className="flex items-center gap-3">
             <Bot className="h-8 w-8" />
             <div>
-              <h1 className="text-2xl font-bold">Campus AI Assistant</h1>
-              <p className="text-primary-foreground/80">Your guide to campus life and services</p>
+              <h1 className="text-2xl font-bold">MALLAREDDY DEEMED TO BE UNIVERSITY</h1>
+              <p className="text-primary-foreground/80">AI Campus Assistant - Your guide to campus life and services</p>
             </div>
           </div>
         </div>
